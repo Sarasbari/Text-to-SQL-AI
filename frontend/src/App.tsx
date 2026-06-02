@@ -311,7 +311,7 @@ export default function App() {
         <main className="flex-1 flex flex-col h-full overflow-y-auto pr-1 space-y-4">
           
           {/* Question Input Card */}
-          <section className="bg-[#1e1e2e]/50 border border-slate-800/80 rounded-xl p-5 shadow-lg relative overflow-hidden group">
+          <section className="bg-[#1e1e2e]/50 border border-slate-800/80 rounded-xl p-5 shadow-lg relative overflow-hidden group shrink-0">
             <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
               <Code2 className="h-24 w-24 text-slate-400" />
             </div>
