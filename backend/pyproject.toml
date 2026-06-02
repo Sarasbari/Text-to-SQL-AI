@@ -1,0 +1,26 @@
+[project]
+name = "text-to-sql-backend"
+version = "0.1.0"
+description = "FastAPI backend for text-to-sql-ai"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.1.0",
+    "duckdb>=0.10.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.2.0",
+    "transformers>=4.38.0",
+    "peft>=0.8.0",
+    "accelerate>=0.27.0",
+    "huggingface-hub>=0.20.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.26.0",
+]

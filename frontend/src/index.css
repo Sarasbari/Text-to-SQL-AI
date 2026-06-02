@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Custom scrollbars for a premium dark-themed UI feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313244;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #45475a;
+}
+
+/* Custom styles for high-end aesthetic styling */
+.glass-panel {
+  background: rgba(30, 30, 46, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: #11111b;
+  color: #cdd6f4;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Stepper line layout custom rules */
+.timeline-dot {
+  position: relative;
+}
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 100%;
+  background: #313244;
+  transform: translateX(-50%);
+}
+.timeline-item:last-child .timeline-dot::after {
+  display: none;
+}
