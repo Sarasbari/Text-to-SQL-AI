@@ -2,7 +2,13 @@
 
 A production-ready, full-stack Text-to-SQL workbench that translates natural language English questions into SQL, validates them against a DuckDB relational database in read-only mode, and automatically corrects execution errors using a model self-correction feedback loop.
 
+### 🌐 Live Demo Links
+- **Frontend Dashboard:** [https://text-to-sql-ai.vercel.app](https://text-to-sql-ai.vercel.app)
+- **Backend API Server:** [https://text-to-sql-ai-a4vs.onrender.com](https://text-to-sql-ai-a4vs.onrender.com)
+- **Deployment Guide:** [DEPLOYMENT.md](./docs/DEPLOYMENT.md)
+
 ![Query Workbench Dashboard](./docs/assets/query_workbench_dashboard.png)
+
 
 ---
 
