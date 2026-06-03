@@ -7,7 +7,7 @@ import RecoveryTimeline from './components/RecoveryTimeline';
 import HistoryPanel from './components/HistoryPanel';
 import type { SchemaInfo, GenerateResponse, QueryResult, ValidationResult, TimingInfo } from './types';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 export default function App() {
   const [schemas, setSchemas] = useState<SchemaInfo[]>([]);
