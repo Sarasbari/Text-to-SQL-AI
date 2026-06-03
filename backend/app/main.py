@@ -20,8 +20,9 @@ app = FastAPI(
 
 # CORS configuration
 # Allowing frontend connections dynamically based on config
-origins = [origin.strip() for origin in settings.CORS_ORIGINS.split(",") if origin.strip()]
+origins = [origin.strip().rstrip("/") for origin in settings.CORS_ORIGINS.split(",") if origin.strip()]
 app.add_middleware(
+
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
